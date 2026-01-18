@@ -1,0 +1,19 @@
+CREATE TABLE IF NOT EXISTS "Entries" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Entries" PRIMARY KEY AUTOINCREMENT,
+    "Title" TEXT NOT NULL,
+    "Content" TEXT NOT NULL,
+    "CreatedDate" TEXT NOT NULL,
+    "ModifiedDate" TEXT NULL,
+    "PrimaryMood" TEXT NOT NULL,
+    "SecondaryMood1" TEXT NULL,
+    "SecondaryMood2" TEXT NULL,
+    "Category" TEXT NOT NULL,
+    "Tags" TEXT NOT NULL,
+    "EntryDate" TEXT NOT NULL,
+    "WordCount" INTEGER NOT NULL
+);
+CREATE UNIQUE INDEX "IX_Entries_EntryDate" ON "Entries" ("EntryDate");
+1|Reading Book|I'm happy to learn book "The Singularity is nearer, when we merge with AI" by Ray Kurzweil. |2026-01-14 16:35:25.365403||Happy|Relaxed|Calm|Personal|Study|2026-01-14 00:00:00|17
+2|Project SeismoNepal|Working for my project on SeismoNepal. Stress day of my hectic life. Too much of documentation and implementation. |2026-01-16 10:27:08.161386||Relaxed|Calm|Stressed|Work|Work, Study|2026-01-16 00:00:00|18
+3|Hangout With Friend|I'm happy to have lunch with my friend. Had Vietnamese Food. |2026-01-17 19:22:11.83269||Happy|Excited|Relaxed|Food|Food|2026-01-17 00:00:00|11
+4|Submitted Coursework AI|Submitted The Final Coursework Artificial Intelligence.  |2026-01-18 09:20:10.764548||Relaxed|Confident|Grateful|Work|Work|2026-01-18 00:00:00|6
