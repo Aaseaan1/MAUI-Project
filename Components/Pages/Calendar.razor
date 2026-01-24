@@ -51,22 +51,19 @@
                                     var hasEntry = HasEntryForDate(dateToCheck);
                                     var isToday = dateToCheck == DateTime.Today;
                                     var entry = GetEntryForDate(dateToCheck);
-
                                     <td class="@GetCellClass(isToday, hasEntry)" 
                                         style="height: 100px; vertical-align: top; cursor: @(hasEntry ? "pointer" : "default");"
                                         @onclick="() => OnDateClick(dateToCheck)">
                                         <div class="p-2">
-                                            <strong>@day.Value</strong>
                                             @if (hasEntry && entry != null)
                                             {
-                                                <div class="mt-1">
-                                                    <span class="badge bg-success" style="font-size: 0.7rem;">
-                                                        @entry.PrimaryMood
-                                                    </span>
-                                                    <div class="small text-truncate mt-1" style="font-size: 0.7rem;">
-                                                        @entry.Title
-                                                    </div>
-                                                </div>
+                                                <span style="font-size: 2rem; line-height: 1; display: block; margin-top: 0.5rem;">
+                                                    @GetMoodEmoji(entry.PrimaryMood)
+                                                </span>
+                                            }
+                                            else
+                                            {
+                                                <strong>@day.Value</strong>
                                             }
                                         </div>
                                     </td>
@@ -90,6 +87,20 @@
 </div>
 
 @code {
+    private string GetMoodEmoji(string mood)
+    {
+        return mood switch
+        {
+            "Happy" => "😃",
+            "Relaxed" => "😌",
+            "Confident" => "😎",
+            "Sad" => "😢",
+            "Angry" => "😠",
+            "Anxious" => "😰",
+            "Neutral" => "😐",
+            _ => "📝"
+        };
+    }
     private DateTime currentMonth = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
     private List<JournalEntry>? entries;
 

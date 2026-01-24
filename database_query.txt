@@ -14,6 +14,9 @@ CREATE TABLE IF NOT EXISTS "Entries" (
 );
 CREATE UNIQUE INDEX "IX_Entries_EntryDate" ON "Entries" ("EntryDate");
 1|Reading Book|I'm happy to learn book "The Singularity is nearer, when we merge with AI" by Ray Kurzweil. |2026-01-14 16:35:25.365403||Happy|Relaxed|Calm|Personal|Study|2026-01-14 00:00:00|17
-2|Project SeismoNepal|Working for my project on SeismoNepal. Stress day of my hectic life. Too much of documentation and implementation. |2026-01-16 10:27:08.161386||Relaxed|Calm|Stressed|Work|Work, Study|2026-01-16 00:00:00|18
-3|Hangout With Friend|I'm happy to have lunch with my friend. Had Vietnamese Food. |2026-01-17 19:22:11.83269||Happy|Excited|Relaxed|Food|Food|2026-01-17 00:00:00|11
-4|Submitted Coursework AI|Submitted The Final Coursework Artificial Intelligence.  |2026-01-18 09:20:10.764548||Relaxed|Confident|Grateful|Work|Work|2026-01-18 00:00:00|6
+2|SeismoNepal|Working for my project on SeismoNepal. Stress day of my hectic life. Too much of documentation and implementation. |2026-01-16 10:27:08.161386|2026-01-18 19:00:29.14752|Relaxed|Calm|Stressed|Work|Work, Study|2026-01-16 00:00:00|18
+3|Hangout |I'm happy to have lunch with my friend. Had Vietnamese Food. |2026-01-17 19:22:11.83269|2026-01-18 19:01:03.077153|Happy|Excited|Relaxed|Food|Food|2026-01-17 00:00:00|11
+4|AI Coursework|Submitted The Final Coursework Artificial Intelligence.  |2026-01-18 09:20:10.764548|2026-01-18 19:00:05.379596|Relaxed|Confident|Grateful|Work|Work|2026-01-18 00:00:00|6
+5|Application Development M2|Starting the coursework of application development milestone 2 |2026-01-21 09:42:34.029755|2026-01-21 09:43:04.322593|Confident|Calm|Bored|Work|Work|2026-01-21 00:00:00|8
+6|AI VIVA Preparation|Preparing for VIVA Study on Artificial Intelligence |2026-01-22 18:36:40.191603||Relaxed|Calm|Stressed|Work|Work|2026-01-22 00:00:00|7
+7|Submitted Milestone 2 AD|Finally submitted the coursework milestone 2 of Application Development. |2026-01-24 09:57:39.545311||Happy|Relaxed|Confident|Work|Work|2026-01-24 00:00:00|9
